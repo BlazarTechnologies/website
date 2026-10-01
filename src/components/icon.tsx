@@ -1,6 +1,8 @@
-export function Icon({ className }: { className?: string }) {
+import type { ComponentProps } from "react";
+
+export function Icon(props: ComponentProps<"svg">) {
   return (
-    <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" className={className}>
+    <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" {...props}>
       <path d="M408 104 275.2 249.6 262.4 236.8Z M104 408 236.8 262.4 249.6 275.2Z" />
       <ellipse
         cx="256"
