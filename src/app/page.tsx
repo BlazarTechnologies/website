@@ -1,5 +1,4 @@
-import Image from "next/image";
-import icon from "@/assets/icon.svg";
+import { Icon } from "@/components/icon";
 
 const GITHUB_URL = "https://github.com/BlazarTechnologies";
 
@@ -17,15 +16,15 @@ export default function Home() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background/70 backdrop-blur-md">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight">
-            <Image src={icon} alt="" className="size-8" priority />
+            <Icon className="size-8 text-white" />
             <span>Blazar Technologies</span>
           </a>
         </nav>
       </header>
 
-      <main id="top" className="flex-1">
+      <main id="top" className="flex flex-1 flex-col">
         {/* Hero */}
-        <section className="relative isolate flex min-h-svh items-center overflow-hidden pt-16">
+        <section className="relative isolate flex flex-1 items-center overflow-hidden pt-16">
           <div className="bg-grid absolute inset-0 -z-10" />
           <div className="blazar -z-10" aria-hidden="true">
             <div className="blazar-disk" />
@@ -38,6 +37,10 @@ export default function Home() {
             <h1 className="mx-auto max-w-4xl text-5xl font-semibold tracking-tight text-balance sm:text-7xl">
               Blazar Technologies
             </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-balance text-muted sm:text-xl">
+              Blazar Technologies is an independent team building open-source projects from the
+              ground up.
+            </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href={GITHUB_URL}

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Blazar Technologies is an independent team building a open-source projects from the ground up.";
+  "Blazar Technologies is an independent team building open-source projects from the ground up.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://blazartech.org"),
