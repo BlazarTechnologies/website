@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07070b;
+  --foreground: #ededf2;
+  --muted: #9a9aab;
+  --accent-from: #7c5cff;
+  --accent-to: #22d3ee;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
